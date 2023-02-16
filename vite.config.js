@@ -6,14 +6,14 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: 'docs',
-    assetsDir: 'etc',
+    assetsDir: 'assets',
     sourcemap: true,
     minify: true,
     rollupOptions: {
       output: {
-        entryFileNames: 'etc/[name].[hash].js',
-        chunkFileNames: 'etc/[name].[hash].js',
-        assetFileNames: 'etc/[name].[hash].[ext]'
+        entryFileNames: '[name].[hash].js',
+        chunkFileNames: '[name].[hash].js',
+        assetFileNames: '[name].[hash].[ext]'
       }
     }
   },
