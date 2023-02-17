@@ -1,13 +1,14 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import './App.css'
+import { useState } from 'react'
+import './App.css'
 
 function App() {
-  // const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0)
 
   return (
-    <div className="bg-violet-500 h-screen w-screen">
-      <h1 className="underline text-center text-5xl text-white py-5 hover:no-underline">bozzhik</h1>
+    <div className="App">
+      <button className="mt-6 rounded border-transparent border-2 bg-[#1a1a1a] text-white text-xl font-medium cursor-pointer transition duration-500 ease-out px-3 py-1 grid place-items-center m-auto" onClick={() => setCount((count) => count + 1)}>
+        count is {count}
+      </button>
     </div>
   )
 }
