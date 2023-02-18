@@ -4,6 +4,9 @@ module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      fontFamily: {
+        custom: ['Space Grotesk', 'ui-sans-serif', 'sans-serif']
+      },
       colors: {
         primary: '#cd13cd',
         gradient: {
@@ -22,8 +25,8 @@ module.exports = {
           900: '#4e4e4e'
         }
       },
-      fontFamily: {
-        custom: ['Space Grotesk', 'ui-sans-serif', 'sans-serif']
+      dropShadow: {
+        custom: '0 4px 4px rgba(0, 0, 0, 0.25)'
       }
     },
     screens: {
