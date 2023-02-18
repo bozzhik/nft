@@ -20,7 +20,10 @@ module.exports = {
       fontFamily: {
         custom: ['Space Grotesk', 'ui-sans-serif', 'sans-serif']
       }
+    },
+    debugScreens: {
+      position: ['top', 'right']
     }
   },
-  plugins: []
+  plugins: [require('tailwindcss-debug-screens')]
 }
