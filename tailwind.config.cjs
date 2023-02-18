@@ -1,10 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  mode: 'jit',
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: {
         primary: '#cd13cd',
+        gradient: {
+          start: '#432093',
+          stop: '#8edbff'
+        },
         grey: {
           100: '#f0f0f0',
           200: '#e4e4e4',
@@ -22,9 +27,9 @@ module.exports = {
       }
     },
     screens: {
-      sm: { min: '300px', max: '767px' },
-      md: { min: '768px', max: '1023px' },
-      lg: { min: '1024px', max: '1279px' },
+      sm: { min: '300px' },
+      md: { min: '768px' },
+      lg: { min: '1024px' },
       xl: { min: '1280px' }
     },
     debugScreens: {
