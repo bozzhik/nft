@@ -1,4 +1,4 @@
-function SlideBody({ caption1, caption2, price, buttonText, imageUrl }) {
+export default function SlideBody({ caption1, caption2, price, buttonText, imageUrl }) {
   return (
     <div className="relative flex flex-col min-h-full px-5 pt-32 pb-5 shrink-0">
       <div className="relative flex items-center justify-center flex-auto">
@@ -22,5 +22,3 @@ function SlideBody({ caption1, caption2, price, buttonText, imageUrl }) {
     </div>
   )
 }
-
-export default SlideBody

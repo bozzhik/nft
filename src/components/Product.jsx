@@ -1,6 +1,6 @@
 import SlideBody from './SlideBody'
 
-const Product = () => {
+export default function Product() {
   return (
     <div className="flex flex-col flex-auto">
       <div id="slider" className="min-h-full overflow-hidden swiper">
@@ -19,5 +19,3 @@ const Product = () => {
     </div>
   )
 }
-
-export default Product
