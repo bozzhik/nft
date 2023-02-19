@@ -1,10 +1,10 @@
 export default function SlideBody({ caption, price, buttonText, imageUrl }) {
   return (
-    <div className="relative flex flex-col min-h-full px-5 pt-32 pb-5 shrink-0 sm:min-h-screen sm:px-0 sm:pt-16">
+    <div className="relative flex flex-col min-h-full px-5 pt-32 pb-5 shrink-0 sm:min-h-screen sm:px-0 sm:pt-16 SLIDE">
       <div className="relative flex items-center justify-center flex-auto BODY">
         <div className="w-[75vh] max-w-[90%] mx-auto my-0 flex sm:w-[100vh] sm:max-w-[100%] CONTENT">
           <div className="flex-auto relative pb-[90%]" data-swiper-parallax-opacity="0.5" data-swiper-parallax="0%" data-swiper-parallax-scale="0.3">
-            <img className="absolute top-0 left-0 object-contain w-full h-full drop-shadow-custom" src={imageUrl} alt="image" />
+            <img className="absolute top-0 left-0 object-contain w-full h-full drop-shadow-custom PICTURE" src={imageUrl} alt="image" />
           </div>
         </div>
         <div className="absolute top-0 left-0 flex flex-col items-center justify-center w-full h-full text-center mix-blend-difference z-[-2]">
