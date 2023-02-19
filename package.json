@@ -1,7 +1,7 @@
 {
   "name": "nft",
   "private": false,
-  "version": "2.2",
+  "version": "3.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
