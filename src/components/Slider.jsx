@@ -10,7 +10,7 @@ import skull09 from '../assets/nft/skull-09.png'
 
 import SlideBody from './SlideBody'
 
-export default function Product() {
+export default function Slider() {
   return (
     <div className="flex flex-col flex-auto">
       <div id="slider" className="min-h-full overflow-hidden swiper">

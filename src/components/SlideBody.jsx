@@ -1,5 +1,3 @@
-import { useRef, useState } from 'react'
-
 export default function SlideBody({ caption, price, buttonText, imageUrl }) {
   return (
     <div className="relative flex flex-col min-h-full px-5 pt-32 pb-5 shrink-0">
