@@ -9,7 +9,12 @@ function windowLoaded() {
       speed: 1000,
       parallax: true,
       mousewheel: true,
-      keyboard: true
+      keyboard: true,
+      on: {
+        init: function () {
+          document.documentElement.classList.add('loaded')
+        }
+      }
     })
   }
 }
