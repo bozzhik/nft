@@ -49,7 +49,7 @@ function windowLoaded() {
       productImageFly.style.left = `${cartPos.left}px`
       productImageFly.style.top = `${cartPos.top}px`
       productImageFly.style.width = `0px`
-      productImageFly.style.height = `0px`
+      productImageFly.style.height = `50px`
       productImageFly.style.opacity = `0.5`
     }, 0)
 

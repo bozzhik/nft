@@ -4,7 +4,7 @@ export default function Header() {
       <a href="" className="text-4xl font-bold pointer-events-auto sm:text-2xl">
         SKULLS NFT
       </a>
-      <a href="" className="pointer-events-auto CART">
+      <a href="" className="text-2xl pointer-events-auto CART sm:text-xl">
         Cart [<span>0</span>]
       </a>
     </div>
