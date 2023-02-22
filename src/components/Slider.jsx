@@ -16,10 +16,10 @@ export default function Slider() {
       <div id="slider" className="min-h-full overflow-hidden swiper">
         <div className="flex max-h-full swiper-wrapper">
           <div className="relative flex flex-col min-h-full px-5 pt-0 pb-5 shrink-0 swiper-slide">
-            <SlideBody caption="neon gangster" price="1.325" buttonText="BUY NOW" imageUrl={skull01} />
+            <SlideBody caption="strong samurai" price="1.425" buttonText="BUY NOW" imageUrl={skull01} />
           </div>
           <div className="relative flex flex-col min-h-full px-5 pt-0 pb-5 shrink-0 swiper-slide">
-            <SlideBody caption="strong samurai" price="1.425" buttonText="BUY NOW" imageUrl={skull02} />
+            <SlideBody caption="neon gangster" price="1.325" buttonText="BUY NOW" imageUrl={skull02} />
           </div>
           <div className="relative flex flex-col min-h-full px-5 pt-0 pb-5 shrink-0 swiper-slide">
             <SlideBody caption="banana bandit" price="1.375" buttonText="BUY NOW" imageUrl={skull03} />

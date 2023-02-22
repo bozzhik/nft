@@ -13,6 +13,30 @@ function windowLoaded() {
       on: {
         init: function () {
           document.documentElement.classList.add('loaded')
+          document.body.style.backgroundImage = 'linear-gradient(to bottom, #ff0000, #0000ff)'
+        },
+
+        slideChange: function () {
+          const bgColors = {
+            0: 'linear-gradient(to right, #312093, #8ea8ff)',
+            1: 'linear-gradient(to right, #702093, #ca8eff)',
+            2: 'linear-gradient(to right, #d7a210, #fff48e)',
+            3: 'linear-gradient(to right, #ff8200, #ffcc00)',
+            4: 'linear-gradient(to right, #95ff00, #00ff5e)',
+            5: 'linear-gradient(to right, #a300cc, #e6b3ff)',
+            6: 'linear-gradient(to right, #1a1a1a, #494949)',
+            7: 'linear-gradient(to right, #9000ff, #b300ff)',
+            8: 'linear-gradient(to right, #ff00c8, #d159c3)'
+          }
+
+          const app = document.getElementById('App')
+          const swiper = this
+          const slideIndex = swiper.realIndex
+          const gradient = bgColors[slideIndex]
+
+          setTimeout(() => {
+            app.style.backgroundImage = gradient
+          }, 500)
         }
       }
     })
