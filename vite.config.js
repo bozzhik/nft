@@ -8,6 +8,7 @@ export default defineConfig({
     outDir: 'docs',
     assetsDir: 'assets',
     publicDir: 'public',
+    assetsInclude: ['CNAME'],
     minify: true,
     rollupOptions: {
       output: {
