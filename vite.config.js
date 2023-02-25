@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     outDir: 'docs',
     assetsDir: 'assets',
-    publicDir: 'static',
+    publicDir: 'public',
     minify: true,
     rollupOptions: {
       output: {
