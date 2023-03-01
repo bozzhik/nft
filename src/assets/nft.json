@@ -1,0 +1,56 @@
+[
+  {
+    "image": "/nft/skull-01.webp",
+    "caption": "strong samurai",
+    "buttonText": "BUY NOW",
+    "price": 1.425
+  },
+  {
+    "image": "/nft/skull-02.webp",
+    "caption": "neon gangster",
+    "buttonText": "BUY NOW",
+    "price": 1.325
+  },
+  {
+    "image": "/nft/skull-03.webp",
+    "caption": "banana bandit",
+    "buttonText": "BUY NOW",
+    "price": 1.375
+  },
+  {
+    "image": "/nft/skull-07.webp",
+    "caption": "domsday farmer",
+    "buttonText": "BUY NOW",
+    "price": 1.325
+  },
+  {
+    "image": "/nft/skull-06.webp",
+    "caption": "robocop vampire",
+    "buttonText": "BUY NOW",
+    "price": 1.155
+  },
+  {
+    "image": "/nft/skull-04.webp",
+    "caption": "many-eyed",
+    "buttonText": "BUY NOW",
+    "price": 1.215
+  },
+  {
+    "image": "/nft/skull-05.webp",
+    "caption": "cool baby",
+    "buttonText": "BUY NOW",
+    "price": 1.105
+  },
+  {
+    "image": "/nft/skull-08.webp",
+    "caption": "sports smoker",
+    "buttonText": "BUY NOW",
+    "price": 1.115
+  },
+  {
+    "image": "/nft/skull-09.webp",
+    "caption": "crazy hipster",
+    "buttonText": "BUY NOW",
+    "price": 1.25
+  }
+]
