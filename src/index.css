@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.swiper-wrapper {
+  @apply flex max-h-full;
+}
+
 /* .WRAPPER {
   opacity: 0;
 }
