@@ -5,14 +5,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        custom: ['Space Grotesk', 'ui-sans-serif', 'sans-serif']
+        custom: ['Space Grotesk', 'ui-sans-serif', 'sans-serif'],
       },
       colors: {
         primary: '#cd13cd',
-        gradient: {
-          start: '#432093',
-          stop: '#8edbff'
-        },
         grey: {
           100: '#f0f0f0',
           200: '#e4e4e4',
@@ -22,22 +18,22 @@ module.exports = {
           600: '#818181',
           700: '#6a6a6a',
           800: '#5a5a5a',
-          900: '#4e4e4e'
-        }
+          900: '#4e4e4e',
+        },
       },
       dropShadow: {
-        custom: '0 4px 4px rgba(0, 0, 0, 0.25)'
-      }
+        custom: '0 4px 4px 0091ff40',
+      },
     },
     screens: {
-      sm: { min: '300px' },
-      md: { min: '768px' },
-      lg: { min: '1024px' },
-      xl: { min: '1280px' }
+      sm: {min: '300px', max: '767px'},
+      md: {min: '768px'},
+      lg: {min: '1024px'},
+      xl: {min: '1280px'},
     },
     debugScreens: {
-      position: ['top', 'right']
-    }
+      position: ['top', 'right'],
+    },
   },
-  plugins: [require('tailwindcss-debug-screens')]
+  plugins: [require('tailwindcss-debug-screens')],
 }

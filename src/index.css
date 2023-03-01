@@ -3,3 +3,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* .WRAPPER {
+  opacity: 0;
+}
+
+.loaded .WRAPPER {
+  @apply transition-opacity duration-[800ms] ease-in-out delay-[0ms] opacity-100;
+}
+
+.HEADER {
+  @apply translate-x-0 translate-y-[-100%] opacity-0;
+}
+
+.loaded .HEADER {
+  @apply translate-x-0 translate-y-[0%] transition-all duration-[800ms] ease-in-out delay-[1000ms] opacity-100;
+}
+
+.CONTENT,
+.BODY {
+  @apply translate-x-0 translate-y-[5%] opacity-0;
+}
+
+.loaded .CONTENT,
+.loaded .BODY {
+  @apply translate-x-0 translate-y-[0%] opacity-100 transition-all duration-[800ms] ease-in-out;
+}
+
+.loaded .BODY {
+  @apply delay-[500ms];
+}
+
+.loaded .CONTENT {
+  @apply delay-[1600ms];
+}
+
+.PRICE,
+.BUY {
+  @apply opacity-0 translate-x-0 translate-y-[100%];
+}
+
+.loaded .PRICE,
+.loaded .BUY {
+  @apply opacity-100 translate-x-0 translate-y-[0%] transition-all duration-[800ms] ease-in-out delay-[1000ms];
+} */
