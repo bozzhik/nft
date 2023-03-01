@@ -37,7 +37,7 @@ export const Slider = ({slides}) => {
 
   return (
     <div>
-      <Swiper slidesPerView={1} className="min-h-full overflow-hidden" loop={true} speed={1000} parallax={true} mousewheel={true} keyboard={true} onSlideChange={(swiper) => slideChange(swiper)} onSwiper={(swiper) => console.log(swiper)}>
+      <Swiper slidesPerView={1} className="min-h-full overflow-hidden" loop={true} speed={1000} parallax={true} mousewheel={true} keyboard={true} onSlideChange={(swiper) => slideChange(swiper)}>
         {slides.map((slide) => (
           <SwiperSlide key={slide.image} className="relative flex flex-col min-h-full px-5 pt-0 pb-5 shrink-0 swiper-slide">
             <div className="relative flex flex-col min-h-full px-5 pt-24 pb-5 shrink-0 sm:min-h-screen sm:px-0 sm:pt-16 SLIDE">
