@@ -7,7 +7,7 @@
 .swiper-wrapper {
   @apply flex max-h-full;
 }
-/* 
+
 .WRAPPER {
   opacity: 0;
 }
@@ -50,4 +50,4 @@
 .loaded .PRICE,
 .loaded .BUY {
   @apply opacity-100 translate-x-0 translate-y-[0%] transition-all duration-[800ms] ease-in-out delay-[1000ms];
-} */
+}

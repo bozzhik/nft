@@ -7,7 +7,10 @@ SwiperCore.use([Mousewheel, Keyboard, Parallax])
 
 export const Slider = ({slides}) => {
   useEffect(() => {
-    document.documentElement.classList.add('loaded')
+    window.addEventListener('load', windowLoaded)
+    function windowLoaded() {
+      document.documentElement.classList.add('loaded')
+    }
   }, [])
 
   const slideChange = (swiper) => {
