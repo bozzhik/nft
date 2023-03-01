@@ -1,7 +1,8 @@
 {
   "name": "nft",
-  "private": false,
-  "version": "1.2",
+  "version": "5.0",
+  "description": "",
+  "main": "index.js",
   "type": "module",
   "scripts": {
     "dev": "vite",
