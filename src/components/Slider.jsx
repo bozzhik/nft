@@ -6,8 +6,6 @@ import {useEffect} from 'react'
 SwiperCore.use([Mousewheel, Keyboard, Parallax])
 
 export const Slider = ({slides}) => {
-  document.body.style.backgroundImage = 'linear-gradient(to right, #312093, #8ea8ff)'
-
   useEffect(() => {
     document.documentElement.classList.add('loaded')
   }, [])
@@ -25,7 +23,7 @@ export const Slider = ({slides}) => {
       8: 'linear-gradient(to right, #ff00c8, #d159c3)',
     }
 
-    const app = document.getElementById('App')
+    let app = document.getElementById('App')
     const slideIndex = swiper.realIndex
     const gradient = bgColors[slideIndex]
 
@@ -42,7 +40,7 @@ export const Slider = ({slides}) => {
             <div className="relative flex flex-col min-h-full px-5 pt-24 pb-5 shrink-0 sm:min-h-screen sm:px-0 sm:pt-16 SLIDE">
               <div className="relative flex items-center justify-center flex-auto BODY">
                 <div className="w-[75vh] max-w-[90%] mx-auto my-0 flex sm:w-[100vh] sm:max-w-[100%] CONTENT">
-                  <div className="flex-auto relative pb-[90%]" data-swiper-parallax-opacity="0.5" data-swiper-parallax="0%" data-swiper-parallax-scale="0.3">
+                  <div className="flex-auto relative pb-[90%]" data-swiper-parallax-opacity="0.5" data-swiper-parallax="25%" data-swiper-parallax-scale="0.1">
                     <img className="absolute top-0 left-0 object-contain w-full h-full drop-shadow-custom PICTURE" src={slide.image} alt="image" />
                   </div>
                 </div>
