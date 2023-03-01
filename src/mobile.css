@@ -1,0 +1,27 @@
+@import url(https://fonts.googleapis.com/css?family=Space+Grotesk:regular,500,700&display=swap);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper-wrapper {
+  @apply flex max-h-full;
+}
+
+.WRAPPER {
+  @apply opacity-100;
+}
+
+.HEADER {
+  @apply translate-x-0 translate-y-[0%] opacity-100;
+}
+
+.CONTENT,
+.BODY {
+  @apply translate-x-0 translate-y-[0%] opacity-100;
+}
+
+.PRICE,
+.BUY {
+  @apply opacity-100 translate-x-0 translate-y-[0%];
+}
