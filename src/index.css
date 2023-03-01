@@ -7,8 +7,8 @@
 .swiper-wrapper {
   @apply flex max-h-full;
 }
-
-/* .WRAPPER {
+/* 
+.WRAPPER {
   opacity: 0;
 }
 
