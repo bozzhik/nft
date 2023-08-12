@@ -1,11 +1,3 @@
-.WRAPPER {
-  @apply opacity-0;
-}
-
-.loaded .WRAPPER {
-  @apply transition-opacity duration-[800ms] ease-in-out delay-[0ms] opacity-100;
-}
-
 .HEADER {
   @apply translate-x-0 translate-y-[-100%] opacity-0;
 }
