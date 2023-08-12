@@ -29,9 +29,5 @@ module.exports = {
       sm: {max: '768px'},
       xs: {max: '350px'},
     },
-    debugScreens: {
-      position: ['top', 'right'],
-    },
   },
-  plugins: [require('tailwindcss-debug-screens')],
 }
