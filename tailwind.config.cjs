@@ -4,12 +4,10 @@ module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      fontFamily: {
-        custom: ['Space Grotesk', 'ui-sans-serif', 'sans-serif'],
-      },
+      grotesque: ['Space Grotesk', 'ui-sans-serif', 'system-ui', '-apple-system', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif'],
       colors: {
         primary: '#cd13cd',
-        grey: {
+        gray: {
           100: '#f0f0f0',
           200: '#e4e4e4',
           300: '#d1d1d1',
@@ -26,10 +24,10 @@ module.exports = {
       },
     },
     screens: {
-      sm: {min: '300px', max: '767px'},
-      md: {min: '768px'},
-      lg: {min: '1024px'},
-      xl: {min: '1280px'},
+      xl: {max: '1536px'},
+      lg: {max: '1280px'},
+      sm: {max: '768px'},
+      xs: {max: '350px'},
     },
     debugScreens: {
       position: ['top', 'right'],
