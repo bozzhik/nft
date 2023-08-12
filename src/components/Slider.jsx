@@ -1,43 +1,28 @@
-import {Swiper, SwiperSlide} from 'swiper/react'
-import 'swiper/css'
-import SwiperCore, {Mousewheel, Keyboard, Parallax} from 'swiper/core'
 import {useEffect} from 'react'
 
+import {Swiper, SwiperSlide} from 'swiper/react'
+import SwiperCore, {Mousewheel, Keyboard, Parallax} from 'swiper/core'
 SwiperCore.use([Mousewheel, Keyboard, Parallax])
+import 'swiper/css'
 
-export const Slider = ({slides}) => {
+import {bgGradients} from './bgGradients'
+
+export const Slider = ({slides, setBackgroundGradient}) => {
   useEffect(() => {
-    window.addEventListener('load', windowLoaded)
-    function windowLoaded() {
-      document.documentElement.classList.add('loaded')
-    }
+    document.documentElement.classList.add('loaded')
   }, [])
 
-  const slideChange = (swiper) => {
-    const bgColors = {
-      0: 'linear-gradient(to right, #312093, #8ea8ff)',
-      1: 'linear-gradient(to right, #702093, #ca8eff)',
-      2: 'linear-gradient(to right, #d7a210, #fff48e)',
-      3: 'linear-gradient(to right, #1a1a1a, #494949)',
-      4: 'linear-gradient(to right, #a300cc, #e6b3ff)',
-      5: 'linear-gradient(to right, #ff8200, #ffcc00)',
-      6: 'linear-gradient(to right, #95ff00, #00ff5e)',
-      7: 'linear-gradient(to right, #1f3481, #3383b6)',
-      8: 'linear-gradient(to right, #ff00c8, #d159c3)',
-    }
-
-    let app = document.getElementById('App')
+  const handleSlideChange = (swiper) => {
     const slideIndex = swiper.realIndex
-    const gradient = bgColors[slideIndex]
+    const gradient = bgGradients[slideIndex]
 
     setTimeout(() => {
-      app.style.backgroundImage = gradient
+      setBackgroundGradient(gradient)
     }, 500)
   }
-
   return (
     <div>
-      <Swiper slidesPerView={1} className="min-h-full overflow-hidden" loop={true} speed={1000} parallax={true} mousewheel={true} keyboard={true} onSlideChange={(swiper) => slideChange(swiper)}>
+      <Swiper slidesPerView={1} className="min-h-full overflow-hidden" loop={true} speed={1000} parallax={true} mousewheel={true} keyboard={true} onSlideChange={(swiper) => handleSlideChange(swiper)}>
         {slides.map((slide) => (
           <SwiperSlide key={slide.image} className="relative flex flex-col min-h-full px-5 pt-0 pb-5 shrink-0 swiper-slide">
             <div className="relative flex flex-col min-h-full px-5 pt-24 pb-5 shrink-0 sm:min-h-screen sm:px-0 sm:pt-16 SLIDE">
