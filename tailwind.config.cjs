@@ -4,7 +4,9 @@ module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      grotesque: ['Space Grotesk', 'ui-sans-serif', 'system-ui', '-apple-system', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif'],
+      fontFamily: {
+        grotesque: ['Space Grotesk', 'ui-sans-serif', 'system-ui', '-apple-system', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif'],
+      },
       colors: {
         primary: '#cd13cd',
         gray: {
